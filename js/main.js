@@ -29,9 +29,9 @@
     });
   }
 
-  // mobile sticky bar reveal — appears after the cover section
+  // mobile sticky bar reveal — appears after scrolling past the hero
   var msb = document.getElementById('msb');
-  var cover = document.querySelector('.cover');
+  var cover = document.querySelector('.cover') || document.querySelector('.page-hero');
   if (msb && cover && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
