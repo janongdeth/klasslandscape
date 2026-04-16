@@ -2,7 +2,7 @@
 
 Marketing site for Klass Tree & Landscape — TCIA-member tree care, hazardous removals,
 custom landscape design, land clearing, storm response, snow removal, and holiday lighting.
-Based in Fort Wayne, Indiana. 60-mile service radius.
+Based in Fort Wayne, Indiana. 50-mile service radius.
 
 - Phone: 260-443-1666
 - Stack: vanilla HTML / CSS / JS — no framework, no build step

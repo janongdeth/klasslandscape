@@ -1,9 +1,33 @@
 /* Klass Tree & Landscape — main.js
-   Minimal JS: year stamp + mobile sticky bar reveal after cover scroll. */
+   Year stamp + mobile sticky bar reveal + mobile nav toggle */
 (function () {
   // year stamp
   var yr = document.getElementById('yr');
   if (yr) yr.textContent = String(new Date().getFullYear());
+
+  // mobile nav toggle
+  var menuBtn = document.getElementById('hdr-menu');
+  var hdr = menuBtn && menuBtn.closest('.hdr');
+  if (menuBtn && hdr) {
+    menuBtn.addEventListener('click', function () {
+      var open = hdr.classList.toggle('nav-open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+    });
+    // close on nav link click
+    hdr.querySelectorAll('.hdr__nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        hdr.classList.remove('nav-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+    // close on outside click
+    document.addEventListener('click', function (e) {
+      if (!hdr.contains(e.target)) {
+        hdr.classList.remove('nav-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
   // mobile sticky bar reveal — appears after the cover section
   var msb = document.getElementById('msb');
