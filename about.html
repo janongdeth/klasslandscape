@@ -181,22 +181,11 @@
           <h2 id="est-title-about" class="estimate__title">Request a Free<br>Written Estimate</h2>
           <p>The owner reads every request himself. Expect a call back the same day, usually within a few hours.</p>
         </div>
-        <form class="estimate__form" onsubmit="event.preventDefault(); alert('Form is a placeholder - wire to a real backend before launch.');">
-          <label class="fld">
-            <span class="fld__label">Name</span>
-            <input type="text" name="name" required placeholder="Full name">
-          </label>
-          <label class="fld">
-            <span class="fld__label">Phone</span>
-            <input type="tel" name="phone" required placeholder="(xxx) xxx-xxxx">
-          </label>
-          <label class="fld fld--full">
-            <span class="fld__label">Property &amp; service needed</span>
-            <textarea name="msg" rows="3" placeholder="Address, property type, and what you'd like quoted."></textarea>
-          </label>
-          <button type="submit" class="btn btn--solid">Request the estimate &rarr;</button>
-          <p class="fld__note">Or call <a href="tel:+12604431666">260-443-1666</a> · reaches the owner directly.</p>
-        </form>
+        <div class="estimate__form">
+          <p style="font-size:1.15rem; margin-bottom:1.5rem;">Call, text, or use the chat to get started. The owner responds the same day.</p>
+          <a href="tel:+12604431666" class="btn btn--solid" style="margin-bottom:0.75rem; display:inline-block;">Call 260-443-1666</a>
+          <p class="fld__note">Or <a href="mailto:contact@klasstreeandlandscape.com">email us</a> · use the chat in the corner</p>
+        </div>
       </div>
     </section>
 
@@ -245,6 +234,7 @@
     </div>
     <div class="ftr__legal">
       <span>&copy; <span id="yr">2026</span> Klass Tree &amp; Landscape, LLC. Fort Wayne, Indiana. All rights reserved.</span>
+      <span class="ftr__links"><a href="/terms">Terms of Service</a> · <a href="/privacy">Privacy Policy</a></span>
     </div>
   </footer>
 

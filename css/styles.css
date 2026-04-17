@@ -797,7 +797,10 @@ button { font: inherit; cursor: pointer; }
   padding: 1.25rem 0;
   font-size: 0.78rem; color: rgba(58,42,28,0.5);
   font-family: var(--label); letter-spacing: 0.08em;
+  display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem;
 }
+.ftr__links a { color: rgba(58,42,28,0.5); text-decoration: underline; }
+.ftr__links a:hover { color: var(--bark); }
 @media (max-width: 880px) {
   .ftr__inner { grid-template-columns: 1fr 1fr; }
   .ftr__col--brand { grid-column: span 2; }
@@ -1173,3 +1176,25 @@ button { font: inherit; cursor: pointer; }
   border-top: 1px solid var(--rule);
   font-size: 0.97rem; line-height: 1.65; color: var(--bark-mid);
 }
+
+/* ============ LEGAL PAGES ============ */
+.legal { padding: clamp(3rem, 6vw, 5rem) var(--gut); }
+.legal__inner {
+  max-width: 760px; margin: 0 auto;
+  font-family: var(--sans); color: var(--bark);
+  line-height: 1.7; font-size: 0.95rem;
+}
+.legal__inner h1 {
+  font-family: var(--serif); font-variation-settings: "opsz" 144, "SOFT" 30;
+  font-weight: 400; font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 0.5rem; color: var(--bark);
+}
+.legal__inner h2 {
+  font-family: var(--serif); font-variation-settings: "opsz" 72, "SOFT" 30;
+  font-weight: 500; font-size: 1.2rem;
+  margin: 2rem 0 0.5rem; color: var(--bark);
+}
+.legal__inner p { margin: 0 0 1rem; }
+.legal__inner ul { margin: 0 0 1rem; padding-left: 1.5rem; }
+.legal__inner li { margin-bottom: 0.35rem; }
+.legal__inner a { color: var(--sage); }
