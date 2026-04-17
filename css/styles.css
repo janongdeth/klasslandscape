@@ -1022,6 +1022,10 @@ button { font: inherit; cursor: pointer; }
   color: var(--sage); text-decoration: none;
   font-weight: 500; margin-bottom: 0.4rem; line-height: 1;
 }
+.contact-split__email {
+  display: block; font-size: 1.05rem; color: var(--sage);
+  text-decoration: none; margin-bottom: 0.6rem;
+}
 .contact-split__note {
   font-family: var(--serif); font-style: italic;
   font-size: 1rem; color: rgba(244,236,219,0.65); margin: 0 0 2rem;
